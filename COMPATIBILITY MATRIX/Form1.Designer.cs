@@ -37,8 +37,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button1.BackColor = System.Drawing.Color.Navy;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -61,7 +62,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(373, 27);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "                      P.J. de la Rosa Martín © 2023  ";
+            this.textBox1.Text = "          V 1.0        P.J. de la Rosa Martín © 2023  ";
             // 
             // pictureBox1
             // 

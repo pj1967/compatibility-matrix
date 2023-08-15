@@ -175,7 +175,7 @@ namespace COMPATIBILITY_MATRIX
                             {   // imprimimos columna6
                                 palabra = dataGrid.Rows[i].Cells[columna].Value.ToString();
                                 texto = palabra;
-                                if (texto == "INCOMPATIBLE SW" || texto == "INCOMPATIBLE hW")
+                                if (texto == "INCOMPATIBLE SW" || texto == "INCOMPATIBLE HW")
                                     e.Graphics.DrawString(texto, new Font("Arial", fuente, FontStyle.Bold), Brushes.Red, new Point(posx7, posicion_y));//620
                                 else if (texto == "NO REPORTADO")
                                     e.Graphics.DrawString(texto, new Font("Arial", fuente, FontStyle.Bold), Brushes.Orange, new Point(posx7, posicion_y));//620
@@ -330,7 +330,8 @@ namespace COMPATIBILITY_MATRIX
                         {
                             dataGridView1.Rows[fila].Selected = true;
 
-                           // fila = dataGridView1.Rows.Count + 1;
+                            // fila = dataGridView1.Rows.Count + 1;
+                            dataGridView1.FirstDisplayedScrollingRowIndex = fila; //movemos el scroll a la fila seleccionada
                         }
                     }
                     // seleccion de la fila en datagrid2 RETREIVAL cuando quitamos checkbox en datagrid3 CHECK
@@ -339,6 +340,7 @@ namespace COMPATIBILITY_MATRIX
                         if (dataGridView2.Rows[fila].Cells[0].Value.ToString() == lri_selected)
                         {
                             dataGridView2.Rows[fila].Selected = true;
+                            dataGridView2.FirstDisplayedScrollingRowIndex = fila; //movemos el scroll a la fila seleccionada
                             fila = dataGridView2.Rows.Count + 1;
                         }
                     }
